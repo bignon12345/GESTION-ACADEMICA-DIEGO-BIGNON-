@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes,Route } from "react-router-dom"
+import { HashRouter,Routes,Route } from "react-router-dom"
 import Clientes from "./pages/Clientes"
 import Productos from "./pages/Productos"
 import Cursos from "./pages/Cursos"
@@ -9,7 +9,7 @@ import Horario from "./pages/Horario"
 function App() {
   return (
   <>
-    <BrowserRouter>
+    <HashRouter>
      <Routes>
       <Route path='/' element={<Cursos/>}/>
       <Route path='/Cliente' element={<Clientes/>}/>
@@ -19,7 +19,7 @@ function App() {
       <Route path='/secciones' element={<SeccionesPeriodo/>}/>
       <Route path='/horario' element={<Horario/>}/>
      </Routes>
-    </BrowserRouter>   
+    </HashRouter>
   </>
   )
 }
